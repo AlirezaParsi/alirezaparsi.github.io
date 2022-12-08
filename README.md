@@ -1,14 +1,14 @@
 **Minecraft server on Android (Termux)**
 
-To run Minecraft, we must first install Java version 17 from Termux repositories but considering that there is no Java Run Time in the Termux repositories, we should install Java Development Kit v17 (openjdk).
+to run Minecraft, we must first install Java version 17 from Termux repositories but considering that there is no Java Run Time in the Termux repositories, we should install Java Development Kit v17 (openjdk).
 
-First, we update the repositories:
+first, we update the repositories:
 `pkg update`
 
 and install openjdk-17:
  `pkg install openjdk-17`
  
-When the installation is complete, now we create a folder for minecraft.
+when the installation is complete, now we create a folder for minecraft.
 before that make sure you are in the $HOME path.
 
 for that use this command :
