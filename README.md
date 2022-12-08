@@ -1,6 +1,6 @@
 **Minecraft server on Android (Termux)**
 
-To run Minecraf, we must first install Java version 17 from Termux repositories but considering that there is no Java Run Time in the Termux repositories, we install the Java Development Kit v17 (openjdk).
+To run Minecraft, we must first install Java version 17 from Termux repositories but considering that there is no Java Run Time in the Termux repositories, we install the Java Development Kit v17 (openjdk).
 First, we update the repositories:
 
 
