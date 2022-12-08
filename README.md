@@ -62,4 +62,4 @@ go to the bottom of the page and find the IP server in the properties section an
 ![image](https://user-images.githubusercontent.com/29276037/206471003-a29edc19-354d-4f8e-a30b-53489fd55388.png)
 
 
-(Connection methods will be updated. These methods have been tested by myself, and if you have done other things, we will be happy to help in the development of this document.)
+(Connection methods will be updated. These methods have been tested by myself, and if you have done other things, tell me to help in the development of this document.)
