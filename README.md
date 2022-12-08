@@ -41,6 +41,8 @@ then on the computer (i used Windows 10) click on the network icon in the taskba
 ![image](https://user-images.githubusercontent.com/29276037/206463962-c9051949-5756-479e-a4db-f6e9a00703a4.png)
 
 click again on network:
+
+
 ![image](https://user-images.githubusercontent.com/29276037/206464357-66cb9afb-10a2-48ad-980b-25fe246fee28.png)
 
 go to the bottom of the page and find the IP server in the properties section:
