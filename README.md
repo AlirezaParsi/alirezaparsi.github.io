@@ -10,7 +10,8 @@ and install openjdk-17:
  
 When the installation is complete, now we create a folder for minecraft.
 before that make sure you are in the $HOME path.
- for this use this command :
+
+for that use this command :
 `cd`
 or 
 `cd ~`
