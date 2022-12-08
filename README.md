@@ -39,6 +39,7 @@ First, connect the USB cable to your device and computer, and then activate the 
 then on the computer (i used Windows 10) click on the network icon in the taskbar to see the list of networks connected to and click on the connected network.
 
 ![image](https://user-images.githubusercontent.com/29276037/206463962-c9051949-5756-479e-a4db-f6e9a00703a4.png)
+
 click again on network:
 ![image](https://user-images.githubusercontent.com/29276037/206464357-66cb9afb-10a2-48ad-980b-25fe246fee28.png)
 
@@ -46,4 +47,17 @@ go to the bottom of the page and find the IP server in the properties section:
 
 ![image](https://user-images.githubusercontent.com/29276037/206466075-7c5d0b38-fa5e-4ce9-937c-20226cc1f14e.png)
 
-In fact, the IPv4 DNS server is the IP server of Minecraft.
+In fact, the IPv4 DNS server is the IP server of Minecraft as you can see you can use that IP for connecting to your server.
+
+Connecting with Hotspot:
+
+enable hotspot on your device and connect your wifi on pc go to properties like this photo : 
+
+![image](https://user-images.githubusercontent.com/29276037/206470194-014497c5-e325-4d5f-bad6-7bbe90af4210.png)
+
+go to the bottom of the page and find the IP server in the properties section and like USBcable method IPv4 server is Minecraft server.
+
+![image](https://user-images.githubusercontent.com/29276037/206471003-a29edc19-354d-4f8e-a30b-53489fd55388.png)
+
+
+(Connection methods will be updated. These methods have been tested by myself, and if you have done other things, we will be happy to help in the development of this document.)
