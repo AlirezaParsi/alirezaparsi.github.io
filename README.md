@@ -16,4 +16,4 @@ then go to the folder with :
 `cd minecraft`
 I used [Fabric](https://fabricmc.net/use/server/) for my server because it is possible to install performance mods on it like Phosphor and Lithium and etc ...
 download and run method mentione in the [fabric site](https://fabricmc.net/use/server/).
-if your phone have low ram space just change `-Xmx2G` to `Xmx1G`.
+if your phone have low ram space just change `-Xmx2G` to `-Xmx1G`.
