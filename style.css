@@ -19,13 +19,13 @@ body {
   height: 100vh;
   background: linear-gradient(135deg, #6c63ff, #ff6f61);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
   overflow: hidden;
-  flex-direction: column; /* Stack content vertically */
-  gap: 20px; /* Add space between elements */
+  padding: 20px; /* Add padding to prevent overlap */
 }
 
 .hero::before {
@@ -47,7 +47,7 @@ body {
 
 .hero-content {
   z-index: 2;
-  margin-top: 20px; /* Add margin to push content down */
+  margin-bottom: 20px; /* Add margin to separate from profile card */
 }
 
 .hero h1 {
@@ -84,8 +84,7 @@ body {
   border-radius: 15px;
   backdrop-filter: blur(10px);
   text-align: center;
-  position: relative; /* Change from absolute to relative */
-  margin-top: 20px; /* Add margin to push profile card down */
+  z-index: 2;
   animation: float 4s infinite ease-in-out;
 }
 
