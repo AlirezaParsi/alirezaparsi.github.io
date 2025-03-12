@@ -15,3 +15,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// Scroll left and right for features section
+const featureScroll = document.querySelector('.feature-scroll');
+const scrollLeft = document.querySelector('.fa-chevron-left');
+const scrollRight = document.querySelector('.fa-chevron-right');
+
+scrollLeft.addEventListener('click', () => {
+  featureScroll.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+scrollRight.addEventListener('click', () => {
+  featureScroll.scrollBy({ left: 300, behavior: 'smooth' });
+});
