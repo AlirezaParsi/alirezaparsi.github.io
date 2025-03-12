@@ -40,3 +40,13 @@ if (isPhone()) {
   console.log("User is on a PC or tablet");
   document.body.classList.add("pc");
 }
+
+// Fetch README.md and parse it
+fetch('https://raw.githubusercontent.com/AlirezaParsi/pocof3/main/README.md')
+  .then(response => response.text())
+  .then(data => {
+    const featuresSection = document.getElementById('features');
+    const features = data.match(/## 📌 Features([\s\S]*?)## 📥 Installation/)[1];
+    featuresSection.innerHTML += `<p>${features}</p>`;
+  })
+  .catch(error => console.error('Error fetching README.md:', error));
