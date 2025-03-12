@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #FF6F61; /* Coral */
-  --secondary-color: #6B5B95; /* Soft Purple */
-  --background-color: #1E1E2F; /* Dark Navy */
-  --text-color: #FFFFFF; /* White */
-  --accent-color: #88B04B; /* Soft Green */
-  --shadow-color: rgba(255, 111, 97, 0.3); /* Coral Shadow */
-  --card-background: #2A2A3F; /* Darker Blue for Cards */
+  --primary-color: #4A90E2; /* Trustworthy Blue */
+  --secondary-color: #FF6F61; /* Energetic Coral */
+  --background-color: #F5F7FA; /* Light Gray */
+  --text-color: #333333; /* Dark Gray */
+  --accent-color: #88B04B; /* Natural Green */
+  --shadow-color: rgba(74, 144, 226, 0.2); /* Soft Blue Shadow */
+  --card-background: #FFFFFF; /* White */
 }
 
 /* General Styles */
@@ -101,8 +101,8 @@ body {
 
 .btn.secondary {
   background: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn:hover {
@@ -164,7 +164,7 @@ body {
 
 .feature-card p {
   font-size: 1.1rem;
-  color: #DDD;
+  color: #666;
   line-height: 1.6;
 }
 
