@@ -1,10 +1,10 @@
 /* General Styles */
 :root {
-  --primary-color: #ffffff; /* White */
-  --secondary-color: #000000; /* Black */
-  --background-color: #000000; /* Black */
-  --text-color: #ffffff; /* White */
-  --accent-color: #6c63ff; /* Purple for accents */
+  --primary-color: #4A90E2; /* Soft Blue */
+  --secondary-color: #F5F5F5; /* Light Gray */
+  --background-color: #FFFFFF; /* White */
+  --text-color: #333333; /* Dark Gray */
+  --accent-color: #6C63FF; /* Soft Purple */
 }
 
 body {
@@ -67,7 +67,7 @@ body {
 
 .btn.primary {
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--background-color);
 }
 
 .btn.secondary {
@@ -78,7 +78,7 @@ body {
 
 .btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
 }
 
 /* Features Section */
@@ -109,7 +109,13 @@ body {
 
 .feature-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
 }
 
 .feature-card h3 {
@@ -119,7 +125,7 @@ body {
 
 .feature-card p {
   font-size: 1rem;
-  color: #ccc;
+  color: #666;
 }
 
 /* Download Section */
@@ -168,7 +174,7 @@ footer {
 }
 
 footer a {
-  color: var(--accent-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
