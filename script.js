@@ -1,28 +1,14 @@
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href');
-    const targetSection = document.querySelector(targetId);
+    e.preventDefault(); // Prevent default anchor behavior
+    const targetId = this.getAttribute('href'); // Get the target section ID
+    const targetSection = document.querySelector(targetId); // Find the target section
     if (targetSection) {
       targetSection.scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth', // Smooth scroll
+        block: 'start' // Align to the top of the section
       });
     }
   });
-});
-
-// Fade-in animations for sections
-const sections = document.querySelectorAll('section');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.1 });
-
-sections.forEach(section => {
-  observer.observe(section);
 });
