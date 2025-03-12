@@ -166,7 +166,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #6c63ff;
-  animation: glow 2s infinite alternate;
+  /* Removed glow animation */
 }
 
 /* Projects Section */
@@ -186,7 +186,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #6c63ff;
-  animation: glow 2s infinite alternate;
+  /* Removed glow animation */
 }
 
 .project-grid {
