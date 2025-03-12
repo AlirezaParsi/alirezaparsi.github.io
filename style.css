@@ -24,6 +24,8 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  flex-direction: column; /* Stack content vertically */
+  gap: 20px; /* Add space between elements */
 }
 
 .hero::before {
@@ -45,6 +47,7 @@ body {
 
 .hero-content {
   z-index: 2;
+  margin-top: 20px; /* Add margin to push content down */
 }
 
 .hero h1 {
@@ -81,9 +84,8 @@ body {
   border-radius: 15px;
   backdrop-filter: blur(10px);
   text-align: center;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  position: relative; /* Change from absolute to relative */
+  margin-top: 20px; /* Add margin to push profile card down */
   animation: float 4s infinite ease-in-out;
 }
 
