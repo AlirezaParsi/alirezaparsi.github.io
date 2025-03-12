@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #4A90E2; /* Trustworthy Blue */
-  --secondary-color: #FF6F61; /* Energetic Coral */
-  --background-color: #F5F7FA; /* Light Gray */
+  --primary-color: #4A90E2; /* Trusting Blue */
+  --secondary-color: #FFFFFF; /* White */
+  --background-color: #FFFFFF; /* White */
   --text-color: #333333; /* Dark Gray */
-  --accent-color: #88B04B; /* Natural Green */
+  --accent-color: #4A90E2; /* Trusting Blue */
   --shadow-color: rgba(74, 144, 226, 0.2); /* Soft Blue Shadow */
-  --card-background: #FFFFFF; /* White */
+  --card-background: #F5F7FA; /* Light Gray */
 }
 
 /* General Styles */
@@ -96,13 +96,13 @@ body {
 
 .btn.primary {
   background: var(--secondary-color);
-  color: white;
+  color: var(--primary-color);
 }
 
 .btn.secondary {
   background: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .btn:hover {
