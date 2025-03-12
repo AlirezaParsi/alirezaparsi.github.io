@@ -100,9 +100,21 @@ body {
 }
 
 .btn.secondary {
-  background: var(--primary-color); /* Updated to make it visible */
+  background: transparent;
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
+}
+
+.btn.telegram {
+  background: transparent;
+  border: 2px solid var(--primary-color); /* Blue outline */
+  color: var(--primary-color);
+}
+
+.btn.github {
+  background: transparent;
+  border: 2px solid var(--primary-color); /* Blue outline */
+  color: var(--primary-color);
 }
 
 .btn:hover {
@@ -176,16 +188,16 @@ body {
   margin-top: 20px;
   color: var(--primary-color);
   font-size: 2rem;
-  animation: bounce 2s infinite;
+  animation: fadeUp 2s infinite;
 }
 
 .scroll-indicator i {
-  transform: rotate(90deg); /* Rotate to point left */
+  animation: float 3s infinite ease-in-out;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(-10px); } /* Bounce to the left */
+@keyframes fadeUp {
+  0%, 100% { opacity: 0; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(-20px); }
 }
 
 /* Hide scrollbar for a cleaner look */
