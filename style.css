@@ -60,22 +60,25 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .btn.primary {
-  background: var(--accent-color);
-  color: var(--text-color);
+  background: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .btn.secondary {
   background: transparent;
-  border: 2px solid var(--accent-color);
-  color: var(--accent-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Features Section */
@@ -106,7 +109,7 @@ body {
 
 .feature-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
 }
 
 .feature-card h3 {
