@@ -1,10 +1,14 @@
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
+    e.preventDefault(); // Prevent default anchor behavior
+    const targetId = this.getAttribute('href'); // Get the target section ID
+    const targetSection = document.querySelector(targetId); // Find the target section
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth' // Smooth scroll to the target section
+      });
+    }
   });
 });
 
