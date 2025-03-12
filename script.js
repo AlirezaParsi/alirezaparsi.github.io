@@ -1,19 +1,19 @@
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent default anchor behavior
-    const targetId = this.getAttribute('href'); // Get the target section ID
-    const targetSection = document.querySelector(targetId); // Find the target section
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
     if (targetSection) {
       targetSection.scrollIntoView({
-        behavior: 'smooth' // Smooth scroll to the target section
+        behavior: 'smooth'
       });
     }
   });
 });
 
-// Scroll-triggered animations
-const sections = document.querySelectorAll('.about, .projects');
+// Fade-in animations for sections
+const sections = document.querySelectorAll('section');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -26,27 +26,3 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
   observer.observe(section);
 });
-
-// Detect if the user is on a phone or PC
-function isPhone() {
-  return window.matchMedia("(max-width: 767px)").matches;
-}
-
-// Apply device-specific logic
-if (isPhone()) {
-  console.log("User is on a phone");
-  document.body.classList.add("phone");
-} else {
-  console.log("User is on a PC or tablet");
-  document.body.classList.add("pc");
-}
-
-// Fetch README.md and parse it
-fetch('https://raw.githubusercontent.com/AlirezaParsi/pocof3/main/README.md')
-  .then(response => response.text())
-  .then(data => {
-    const featuresSection = document.getElementById('features');
-    const features = data.match(/## 📌 Features([\s\S]*?)## 📥 Installation/)[1];
-    featuresSection.innerHTML += `<p>${features}</p>`;
-  })
-  .catch(error => console.error('Error fetching README.md:', error));

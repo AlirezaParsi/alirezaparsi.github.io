@@ -1,10 +1,18 @@
 /* General Styles */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #1f1f1f;
+  --background-color: #1a1a1a;
+  --text-color: #fff;
+  --accent-color: #ff6f61;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--text-color);
   overflow-x: hidden;
 }
 
@@ -17,7 +25,7 @@ body {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #6c63ff, #ff6f61);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,14 +63,14 @@ body {
 }
 
 .btn.primary {
-  background: #6c63ff;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color);
 }
 
 .btn.secondary {
   background: transparent;
-  border: 2px solid #6c63ff;
-  color: #6c63ff;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn:hover {
@@ -73,7 +81,7 @@ body {
 /* Features Section */
 .features {
   padding: 60px 0;
-  background: #2a2a2a;
+  background: var(--secondary-color);
 }
 
 .features h2 {
@@ -89,7 +97,7 @@ body {
 }
 
 .feature-card {
-  background: #333;
+  background: var(--background-color);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -104,7 +112,7 @@ body {
 .feature-card i {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #6c63ff;
+  color: var(--primary-color);
 }
 
 .feature-card h3 {
@@ -138,7 +146,7 @@ body {
 /* Support Section */
 .support {
   padding: 60px 0;
-  background: #2a2a2a;
+  background: var(--secondary-color);
   text-align: center;
 }
 
@@ -156,14 +164,14 @@ body {
 
 /* Footer */
 footer {
-  background: #1a1a1a;
-  color: #fff;
+  background: var(--background-color);
+  color: var(--text-color);
   text-align: center;
   padding: 20px 0;
 }
 
 footer a {
-  color: #6c63ff;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
