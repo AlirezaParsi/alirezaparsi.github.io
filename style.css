@@ -185,19 +185,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   margin-top: 20px;
   color: var(--primary-color);
   font-size: 2rem;
-  animation: fadeUp 2s infinite;
 }
 
 .scroll-indicator i {
-  animation: float 3s infinite ease-in-out;
+  animation: bounce 2s infinite;
 }
 
-@keyframes fadeUp {
-  0%, 100% { opacity: 0; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(-20px); }
+@keyframes bounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
 }
 
 /* Hide scrollbar for a cleaner look */
