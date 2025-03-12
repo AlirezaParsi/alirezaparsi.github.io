@@ -90,6 +90,16 @@ body {
   margin-bottom: 40px;
 }
 
+.features h2 i {
+  margin-right: 10px;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -113,6 +123,12 @@ body {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: var(--primary-color);
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .feature-card h3 {
@@ -136,6 +152,16 @@ body {
   margin-bottom: 20px;
 }
 
+.download h2 i {
+  margin-right: 10px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
 .download-buttons {
   display: flex;
   gap: 20px;
@@ -153,6 +179,16 @@ body {
 .support h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+}
+
+.support h2 i {
+  margin-right: 10px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
 }
 
 .support-links {
