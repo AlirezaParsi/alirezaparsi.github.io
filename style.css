@@ -84,16 +84,23 @@ body {
   color: var(--secondary-color);
 }
 
+/* Telegram and GitHub Buttons */
 .btn.telegram {
-  background: transparent;
-  border: 2px solid var(--primary-color); /* Blue outline */
-  color: var(--primary-color);
+  background: var(--primary-color); /* Blue background */
+  color: var(--secondary-color); /* White text */
+  border: 2px solid var(--primary-color); /* Blue border */
 }
 
 .btn.github {
-  background: transparent;
-  border: 2px solid var(--primary-color); /* Blue outline */
-  color: var(--primary-color);
+  background: var(--primary-color); /* Blue background */
+  color: var(--secondary-color); /* White text */
+  border: 2px solid var(--primary-color); /* Blue border */
+}
+
+.btn.telegram:hover, .btn.github:hover {
+  background: var(--secondary-color); /* White background on hover */
+  color: var(--primary-color); /* Blue text on hover */
+  border: 2px solid var(--primary-color); /* Blue border on hover */
 }
 
 .btn:hover {
