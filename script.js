@@ -22,3 +22,17 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
   observer.observe(section);
 });
+
+// Detect if the user is on a phone or PC
+function isPhone() {
+  return window.matchMedia("(max-width: 767px)").matches;
+}
+
+// Apply device-specific logic
+if (isPhone()) {
+  console.log("User is on a phone");
+  document.body.classList.add("phone");
+} else {
+  console.log("User is on a PC or tablet");
+  document.body.classList.add("pc");
+}
