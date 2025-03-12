@@ -5,10 +5,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetId = this.getAttribute('href'); // Get the target section ID
     const targetSection = document.querySelector(targetId); // Find the target section
     if (targetSection) {
+      console.log(`Scrolling to ${targetId}`); // Debugging
       targetSection.scrollIntoView({
         behavior: 'smooth', // Smooth scroll
         block: 'start' // Align to the top of the section
       });
+    } else {
+      console.error(`Target section not found: ${targetId}`); // Debugging
     }
   });
 });
